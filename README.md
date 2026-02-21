@@ -1,17 +1,25 @@
 # agent-tool-registry-graph
 
-Tool discovery registry with capability graph and versioning.
+Registry and capability graph for agent tools, versions, and dependencies.
 
-## What This Project Does
+## Scope
 
-This repository provides infrastructure primitives for production-grade AI agent systems.
+Tool manifests, capability indexing, and compatibility metadata.
 
-## Core Capabilities
+## Capabilities
 
-- Secure service boundaries
-- Scalable runtime operations
-- Auditable decision and tool execution paths
-- Extensible APIs for integration
+- Tool manifests, capability indexing, and compatibility metadata.
+- Semantic discovery and ranking for best-fit tool selection.
+- Dependency graph checks and deprecation lifecycle handling.
+- Signed metadata and provenance checks for trusted tool execution.
+
+## Repository Layout
+
+- `src/main.py` entrypoint and lightweight service bootstrap
+- `src/project_profile.py` canonical project metadata
+- `src/service_contract.py` baseline domain contract shape
+- `tests/` smoke and contract tests
+- `docs/` architecture and roadmap
 
 ## Quick Start
 
